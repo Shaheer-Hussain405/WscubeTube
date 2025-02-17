@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WsCubeTech</title>
+
+     <!-- CDN  -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- BOOTSRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <style>
+        .whatsapp-btn {
+    color: #27AE60;
+    border: 2px solid #27AE60;
+    transition: 200ms;
+    padding: 10px 18px;
+}
+.whatsapp-btn:hover {
+    background-color: #27AE60;
+}
+.call-us-btn {
+    color: white;
+    background: linear-gradient(to right ,#0ACEFE, #2699FB);
+}
+.banner-content > h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+.banner-content > h1 > span {
+    color: #2699FB;
+}
+.banner-content > p {
+    font-size: 22px;
+}
+.banner-content > ul {
+    font-size: 22px;
+    list-style: none;
+} 
+.banner-content > ul > li > i {
+    color: #2699FB;
+}
+.banner-content-btn > button {
+    width: 50%;
+    padding: 10px;
+}
+.banner-content-btn > button:first-child {  
+    user-select: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(to right,#0ACEFE,#2699FB);
+   
+}
+.banner-content-btn > button:first-child:hover {
+    background: linear-gradient(to left,#0ACEFE,#2699FB);
+}
+.banner-content-btn > button:last-child {
+    border-radius: 8px;
+    user-select: none;
+    font-weight: 700;
+    border: 2px solid black;
+}
+.banner-content-btn > button:last-child:hover {
+    background-color: white;
+}
+.banner-form {
+    border-radius: 10px;
+    padding: 40px;
+}
+.banner-form > h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.banner-form > p {
+    line-height: 18px;
+}
+.register > button {
+    border-radius: 8px;
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    background: linear-gradient(to right,#0ACEFE,#2699FB);
+    color: white;
+    font-weight: 700;
+}
+.register > button:hover {
+    background: linear-gradient(to left,#0ACEFE,#2699FB);
+}
+.form-label {
+    margin-bottom: 4px;
+}
+.bannersec-2 h2 {
+    color: #2699FB;
+    font-weight:700 ;
+    font-size: 30px;
+}
+.border {
+    border-radius: 10px;
+}
+.banner-form-popup {
+    padding: 20px !important;
+}
+.fs {
+    font-size: 14px;
+}
+.curriculm-btn > button {
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #FFC857, #C11D38);
+}
+.curriculm-btn > button:hover {
+    color: white;
+    background: linear-gradient(to right,#1ca9c9, #0047ab);
+}
+.sec-2 {
+    background-color: #F7FAFF;
+}
+.sec-2 h1 {
+    color: #0A2134;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.sec-2 p {
+    font-size: 15px;
+}
+.sec-col h4 {
+    font-size: 20px;
+    margin-bottom:4px ;
+}
+.sec-col {
+    border-radius: 6px;
+}
+.toggle-number {
+    color:#0A2134;
+    cursor: pointer;
+}
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1100px;
+    }
+}
+@media only screen and (min-width:200px) and (max-width:575px) {
+    .btn-outer{    
+        background-color: white;
+        position:fixed;
+        bottom:0;
+        width: 100% ;
+        left: 0;
+        padding: 5px 0;
+        justify-content: center !important;
+    }
+    .whatsapp-btn {
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+    .banner-content > h1 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 34px;
+    }
+    .banner-content > h1 > br {
+        display: none;
+    }
+    .banner-content > p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .banner-content > ul {
+        font-size: 18px;
+    } 
+    .banner-content-btn  {
+        flex-direction: column;
+    }
+    .banner-content-btn > button {
+        width: 100%;
+    }
+    .banner-form {
+        padding: 20px;
+    }
+    .sec-2 h1 {
+        color: #0A2134;
+        font-size: 28px;
+        font-weight: 700;
+    } 
+    .sec-2 p {
+        font-size: 16px;
+    }
+}
+
+/* Tablet  */
+@media only screen and (min-width:576px) and (max-width:777px) {
+    .whatsapp-btn {
+        font-size: 12px;
+    }
+}
+        
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <!-- Modal_Book-Demo -->
+<div class="modal fade" id="Book-Demo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center col" id="exampleModalLabel">Book Now</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="#" class="banner-form banner-form-popup ">
+                <h3>Book Your Free Class Now!</h3>
+                <p>2 day of free Demo classes without paying in advance!</p>
+
+                <div class="mb-2">
+             <label class="form-label">Name</label>
+                <input type="email" class="form-control">
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Password</label>
+                       <input type="email" class="form-control">
+                       </div>
+
+                       <div>
+                       <label class="form-label">Phone</label>
+                <div class="d-flex mb-3">
+                    <span class="input-group-text" id="basic-addon1">+92</span>
+                    <input type="text" class="form-control" placeholder="Phone number" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <p class="fs">you'll recieve your selection details via email as per form submission. stay Tuned!</p>
+                    <div class="register">
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal_download-curriculm  -->
+<div class="modal fade" id="Download" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center col" id="exampleModalLabel">Download Curriculm</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center">
+          <p>Thank you for your interest in our curriculum! This comprehensive guide offers an in-depth look at our programs, courses, and educational resources designed to empower your learning journey. By downloading the curriculum, you will gain access to detailed descriptions, objectives, and outcomes for each course.</p>
+          <img src="images/Download.png" alt="">
+        </div>
+        <div class="container curriculm-btn button-curriculm pb-3">
+            <button class="col-12 p-2 " >Download Curriculm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <header class="container-fluid bg-white py-2 shadow-lg position-sticky top-0">
+        <!-- container ONE  -->
+        <div class="container">
+            <div class="row align-items-center">
+                <figure class="col-sm-6 col-12  text-sm-start text-center mb-0 ">
+                    <img class="ws-logo" src="images/Ws-logo.png" alt="WsCubeTech">
+                </figure>
+                <div class="col-sm-6">
+                    <div class="btn-outer  d-flex justify-content-end gap-3">
+                    <button class="btn whatsapp-btn "><i class="fa-brands fa-whatsapp"></i> Chat with us</button>
+                    <button class="btn call-us-btn "><i class="fa-solid fa-phone"></i> Call Us</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- section ONE  -->
+    <section class="container-fluid py-lg-6 py-5 ">
+        <!-- container ONE -->
+        <div class="container">
+            <div class="row gy-5 justify-content-between align-items-center">
+                <div class="col-lg-6 col-12">
+                    <div class="banner-content">
+                        <h1>Career Opportunities<br/> in <span>Digital Marketing</span></h1>
+                        <p>Empowering Success with Cutting-Edge Technology for a Digital future</p>
+
+                        <ul class="m-0 p-0">
+                            <li class="mb-3"><i class="fa-solid fa-circle-check"></i>&nbsp Specialization: Performance Marketing</li>
+                            <li class="mb-3"><i class="fa-solid fa-circle-check"></i>&nbsp Min salary of 3-4 LPA</li>
+                            <li class="mb-3"><i class="fa-solid fa-circle-check"></i>&nbsp 50 seats only</li>
+                        </ul>
+
+                        <div class="banner-content-btn d-flex gap-4 pt-2">
+                            <button data-bs-toggle="modal" data-bs-target="#Book-Demo">Book 2 Days Demo</button>
+                            <button data-bs-toggle="modal" data-bs-target="#Download"><i class="fa-solid fa-download"></i>&nbsp Download Curriculm</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12">
+                    <form action="#" class="banner-form shadow-lg">
+                        <h3>Book Your Free Class Now!</h3>
+                        <p>2 day of free Demo classes without paying in advance!</p>
+
+                        <div class="mb-2">
+                     <label class="form-label">Name</label>
+                        <input type="email" class="form-control">
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label">Password</label>
+                               <input type="email" class="form-control">
+                               </div>
+
+                               <div>
+                               <label class="form-label">Phone</label>
+                        <div class="d-flex mb-3">
+                            
+                            <span class="input-group-text nav-link dropdown-toggle toggle-number" id="basic-addon1" data-bs-toggle="dropdown">+92</span>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">+91</li>
+                                <li class="dropdown-item">+92</li>
+                                <li class="dropdown-item">+93</li>
+                                <li class="dropdown-item">+94</li>
+                                
+                              </ul>
+                             
+                            
+                            <input type="text" class="form-control" placeholder="Phone number" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="register">
+                                <button>Register Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- container TWO -->
+        <div class="container border shadow-lg mt-5">
+            <div class="row row-cols-md-5 row-cols-2 bannersec-2 p-4 ">
+
+                <div class="col text-md-start text-center">
+                    <h2>1000+</h2>
+                    <p>Students Trained</p>
+                </div>
+
+                <div class="col text-md-start text-center">
+                    <h2>4.5</h2>
+                    <p>Students earning</p>
+                </div>
+
+                <div class="col text-md-start text-center">
+                    <h2>320+</h2>
+                    <p>Recruiting Partners</p>
+                </div>
+
+                <div class="col text-md-start text-center">
+                    <h2>10:00 AM</h2>
+                    <p>Program Timings</p>
+                </div>
+                
+                <div class=" col-md-2 col-12 text-md-start text-center">
+                    <h2>15 March</h2>
+                    <p>Next Batch Starts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- section TWO  -->
+     <section class="sec-2 py-5">
+        <!-- container ONE  -->
+        <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-lg-start text-center mb-3">
+                    <h1>Key Highlights of the Course</h1>
+                    <p>Discover the core benefits and unique features that make our course stand out and help you achieve your learning goals.</p>
+                </div>
+            </div>
+
+            <div class="row row-cols-lg-3 row-cols-1 gy-3">
+                <div class="col ">
+                    <div class="d-flex p-3 bg-white align-items-center gap-3 sec-col justify-content-center justify-content-lg-start">
+                        <img src="images/file.png" alt="">
+                        <div>
+                            <h4>Assignments &<br/> Modules Tests</h4>
+                            <p class="m-0">Test our knowlege with your past</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="d-flex p-3 bg-white align-items-center gap-3 sec-col justify-content-center justify-content-lg-start">
+                        <img src="images/star.png" alt="">
+                        <div>
+                        <h4>Industry-recognized<br/> Certification</h4>
+                            <p class="m-0">Stand out to your professional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="d-flex p-3 bg-white align-items-center gap-3 sec-col justify-content-center justify-content-lg-start">
+                        <img src="images/camera.png" alt="">
+                        <div>
+                        <h4>Live Classes &<br/> Recorded Lectures</h4>
+                            <p class="m-0">Best of both wordsd of learning</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="d-flex p-3 bg-white align-items-center gap-3 sec-col justify-content-center justify-content-lg-start">
+                        <img src="images/downloadbtn.png" alt="">
+                        <div>
+                        <h4>Downloadable<br/> content</h4>
+                            <p class="m-0">With lifetime access to cloud files</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="d-flex p-3 bg-white align-items-center gap-3 sec-col justify-content-center justify-content-lg-start">
+                        <img src="images/note.png" alt="">
+                        <div>
+                        <h4>6 Industry Level<br/> Projects</h4>
+                            <p class="m-0">Get practical skills environment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="d-flex p-3 bg-white align-items-center gap-3 sec-col justify-content-center justify-content-lg-start">
+                        <img src="images/message.png" alt="">
+                        <div>
+                        <h4>4 Live Doubt Clearing<br/> Session</h4>
+                            <p class="m-0">Gain a clear understanding</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+     </section>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>
